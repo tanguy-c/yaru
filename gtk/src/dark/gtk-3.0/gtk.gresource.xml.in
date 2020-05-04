@@ -1,5 +1,5 @@
 <gresources>
-  <gresource prefix="/com/ubuntu/themes/Yaru-dark/3.0">
+  <gresource prefix="/com/ubuntu/themes/Yaru-c-dark/3.0">
     <file alias="gtk.css">gtk-dark-generated.css</file>
     @ASSETS@
   </gresource>

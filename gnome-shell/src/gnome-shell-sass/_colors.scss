@@ -1,13 +1,14 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
 @import "ubuntu-colors";
+@import "yaru-c-colors";
 
 $base_color: if($variant == 'light', #ffffff, lighten(desaturate($jet, 20%), 10%));
 $bg_color: if($variant == 'light', #FAFAFA, lighten($inkstone, 0.5%));
 $fg_color: if($variant == 'light', $inkstone, $porcelain);
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: if($variant == 'light', $orange, darken($orange, 4%));
+$selected_bg_color: if($variant == 'light', $yc_color, darken($yc_color, 4%));
 $selected_borders_color: if($variant== 'light', darken($selected_bg_color, 15%), darken($selected_bg_color, 30%));
 $borders_color: if($variant == 'light', darken($bg_color, 20%), darken($bg_color, 9%));
 $alt_borders_color: if($variant == 'light', darken($bg_color, 24%), darken($bg_color, 10%));
@@ -69,4 +70,4 @@ $checkradio_bg_color: if($variant=='light', $aubergine, darken($aubergine, 8%));
 $checkradio_fg_color: #ffffff;
 $switch_bg_color: if($variant=='light', $aubergine, darken($aubergine, 8%));
 $switch_border_color: if($variant=='light', darken($aubergine, 15%), darken($borders_color, 5%));
-$focus_border_color: lighten($orange, 14%);
+$focus_border_color: lighten($yc_color, 14%);
