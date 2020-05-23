@@ -30,8 +30,8 @@
                 "gsettings set org.gnome.desktop.interface gtk-theme Yaru;",
                 "sudo ninja install -C build;",
                 "gsettings set org.gnome.desktop.interface gtk-theme Yaru-c;",
-                "gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#0099ff';",
-                "gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-border-color '#0099ff'"
+                "gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-color '#4076C2';",
+                "gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-border-color '#4076C2'"
             ],
             "group": {
                 "kind": "build",
