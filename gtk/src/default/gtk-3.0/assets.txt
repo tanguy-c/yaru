@@ -20,6 +20,7 @@ checkbox-mixed-active
 checkbox-mixed-insensitive
 checkbox-mixed-backdrop
 checkbox-mixed-backdrop-insensitive
+checkbox-selectionmode
 checkbox-active-selectionmode
 checkbox-backdrop-selectionmode
 checkbox-hover-selectionmode
