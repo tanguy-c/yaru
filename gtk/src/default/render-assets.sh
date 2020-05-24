@@ -83,7 +83,7 @@ for i in `cat $INDEX`; do
       $INKSCAPE --export-id=$i \
         --export-id-only \
         --export-background-opacity=0 \
-        --export-png=$_dir/$ASSETS_DIR/$i.png $SRC_FILE >/dev/null
+        --export-filename=$_dir/$ASSETS_DIR/$i.png $SRC_FILE >/dev/null
       [ "$_optimize" == 1 ] && $OPTIPNG -o7 --quiet $_dir/$ASSETS_DIR/$i.png
     fi
   fi
@@ -96,7 +96,7 @@ for i in `cat $INDEX`; do
         $INKSCAPE --export-id=$i \
                   --export-dpi=90 \
                   --export-id-only \
-                  --export-png=$_dir/$ASSETS_DIR/$i.png $SRC_FILE >/dev/null
+                  --export-filename=$_dir/$ASSETS_DIR/$i.png $SRC_FILE >/dev/null
         [ "$_optimize" == 1 ] && $OPTIPNG -o7 --quiet $_dir/$ASSETS_DIR/$i.png
     fi
 
@@ -107,7 +107,7 @@ for i in `cat $INDEX`; do
         $INKSCAPE --export-id=$i \
                   --export-dpi=180 \
                   --export-id-only \
-                  --export-png=$_dir/$ASSETS_DIR/$i@2.png $SRC_FILE >/dev/null
+                  --export-filename=$_dir/$ASSETS_DIR/$i@2.png $SRC_FILE >/dev/null
         [ "$_optimize" ] && $OPTIPNG -o7 --quiet $_dir/$ASSETS_DIR/$i.png
     fi
   fi

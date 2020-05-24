@@ -1,9 +1,13 @@
 checkbox-checked
+checkbox-checked-selectionmode
 checkbox-checked-hover
+checkbox-checked-hover-selectionmode
 checkbox-checked-active
+checkbox-checked-active-selectionmode
 checkbox-checked-insensitive
 checkbox-checked-backdrop
 checkbox-checked-backdrop-insensitive
+checkbox-checked-backdrop-selectionmode
 checkbox-unchecked
 checkbox-unchecked-hover
 checkbox-unchecked-active
@@ -16,6 +20,9 @@ checkbox-mixed-active
 checkbox-mixed-insensitive
 checkbox-mixed-backdrop
 checkbox-mixed-backdrop-insensitive
+checkbox-active-selectionmode
+checkbox-backdrop-selectionmode
+checkbox-hover-selectionmode
 radio-checked
 radio-checked-hover
 radio-checked-active
