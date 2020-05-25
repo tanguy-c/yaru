@@ -98,11 +98,11 @@
       <stop
          id="stop1670"
          offset="0"
-         style="stop-color:#fb7c38;stop-opacity:1" />
+         style="stop-color:#6498E0;stop-opacity:1" />
       <stop
          id="stop1672"
          offset="1"
-         style="stop-color:#9b33ae;stop-opacity:1" />
+         style="stop-color:#294172;stop-opacity:1" />
     </linearGradient>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -122,7 +122,7 @@
          inkscape:connector-curvature="0"
          id="path1084"
          d="M 361.9375,-212 C 507.2348,-212 528,-191.28677 528,-46.125 V 70.125 C 528,215.28618 507.2348,236 361.9375,236 H 214.0625 C 68.7652,236 48,215.28618 48,70.125 V -46.125 C 48,-191.28677 68.7652,-212 214.0625,-212 Z"
-         style="display:inline;opacity:1;fill:#8c59d9;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new" />
+         style="display:inline;opacity:1;fill:#5869D8;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new" />
     </clipPath>
     <filter
        inkscape:collect="always"
@@ -271,11 +271,11 @@
        inkscape:collect="always"
        id="linearGradient4338-3-3">
       <stop
-         style="stop-color:#281d2c;stop-opacity:1"
+         style="stop-color:#1F1C2B;stop-opacity:1"
          offset="0"
          id="stop4340-0-1" />
       <stop
-         style="stop-color:#331d3b;stop-opacity:1"
+         style="stop-color:#221C3A;stop-opacity:1"
          offset="1"
          id="stop4342-7-0" />
     </linearGradient>
@@ -305,11 +305,11 @@
       <stop
          id="stop4342-7"
          offset="0"
-         style="stop-color:#a7a7f1;stop-opacity:1" />
+         style="stop-color:#A7CFF2;stop-opacity:1" />
       <stop
          id="stop4340-0"
          offset="1"
-         style="stop-color:#8c59d9;stop-opacity:1" />
+         style="stop-color:#5869D8;stop-opacity:1" />
     </linearGradient>
     <clipPath
        clipPathUnits="userSpaceOnUse"
