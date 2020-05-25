@@ -108,11 +108,11 @@
        inkscape:collect="always"
        id="linearGradient7022">
       <stop
-         style="stop-color:#442441;stop-opacity:1"
+         style="stop-color:#253B68;stop-opacity:1"
          offset="0"
          id="stop7018" />
       <stop
-         style="stop-color:#924d8b;stop-opacity:1"
+         style="stop-color:#4076C2;stop-opacity:1"
          offset="1"
          id="stop7020" />
     </linearGradient>
@@ -122,11 +122,11 @@
       <stop
          id="stop5171"
          offset="0"
-         style="stop-color:#924d8b;stop-opacity:1;" />
+         style="stop-color:#4076C2;stop-opacity:1;" />
       <stop
          id="stop5173"
          offset="1"
-         style="stop-color:#a05498;stop-opacity:1" />
+         style="stop-color:#5287D1;stop-opacity:1" />
     </linearGradient>
     <clipPath
        clipPathUnits="userSpaceOnUse"

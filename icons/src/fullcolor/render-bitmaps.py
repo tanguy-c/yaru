@@ -49,14 +49,14 @@ def main(args, SRC):
 
         # This is kinda ugly ...
         # Wait for just a '>', or '\n>' if some other char appearead first
-        output = process.stdout.read(1)
-        if output == b'>':
-            return
+        #output = process.stdout.read(1)
+        #if output == b'>':
+        #    return
 
-        output += process.stdout.read(1)
-        while output != b'\n>':
-            output += process.stdout.read(1)
-            output = output[1:]
+        #output += process.stdout.read(1)
+        #while output != b'\n>':
+            #output += process.stdout.read(1)
+            #output = output[1:]
 
     def start_inkscape():
         process = subprocess.Popen(INKSCAPE, bufsize=0, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
@@ -68,11 +68,12 @@ def main(args, SRC):
         if inkscape_process is None:
             inkscape_process = start_inkscape()
 
-        cmd = [icon_file,
-               '--export-dpi', str(dpi),
-               '-i', rect,
-               '-e', output_file]
-        wait_for_prompt(inkscape_process, ' '.join(cmd))
+        cmd = ['file-open:', icon_file, ';'
+               ' export-dpi:', str(dpi), ';'
+               ' export-id:', rect, ';'
+               ' export-filename:', output_file, ';',
+               ' export-do;']
+        wait_for_prompt(inkscape_process, ''.join(cmd))
         optimize_png(output_file)
 
     class ContentHandler(xml.sax.ContentHandler):
