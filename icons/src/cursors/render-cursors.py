@@ -96,7 +96,7 @@ def stderr_reader(inkscape, inkscape_stderr):
 		elif line:
 			print "STDERR> {}".format (line)
 		else:
-			raise UnexpectedEndOfStream
+			raise RuntimeError #UnexpectedEndOfStream
 
 def find_hotspot (hotfile):
 	img = Image.open(hotfile)
@@ -190,7 +190,7 @@ class SVGRect:
 			if os.path.exists (output):
 				skipped[output] = True
 				return
-			command = '-w {size} -h {size} --export-id="{export_id}" --export-png="{export_png}" {svg}\n'.format (size=size, export_id=self.name, export_png=output, svg=svgFName)
+			command = 'file-open:{svg}; export-width:{size}; export-height:{size}; export-id:{export_id}; export-filename:{export_png}; export-do;\n'.format (size=size, export_id=self.name, export_png=output, svg=svgFName)
 			dbg("Command: {}".format (command))
 			inkscape_instances[roundrobin[0]][0].stdin.write (command)
 
@@ -649,7 +649,7 @@ if __name__ == '__main__':
 	inkscape_instances = []
 
 	for i in range (0, options.number_of_renderers):
-		inkscape = subprocess.Popen (['inkscape', '--without-gui', '--shell'], stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+		inkscape = subprocess.Popen (['inkscape', '--shell'], stdin=subprocess.PIPE, stderr=subprocess.PIPE)
 		if inkscape is None:
 			fatalError("Failed to start Inkscape shell process")
 		inkscape_stderr = inkscape.stderr
