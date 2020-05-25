@@ -1,4 +1,4 @@
-project('Yaru-c',
+project('Yaru-Fedora',
         version: '20.04',
         meson_version: '>= 0.45',
         license : ['GPL3', 'CC BY-SA 4.0'],

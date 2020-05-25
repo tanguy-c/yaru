@@ -3,6 +3,6 @@ option('gnome-shell', type: 'boolean', value: true, description:'build gnome-she
 option('gnome-shell-gresource', type: 'boolean', value: false, description: 'build gnome-shell component in gresources')
 option('gtk', type: 'boolean', value: true, description:'build gtk component')
 
-option('default', type: 'boolean', value: true, description:'build Yaru-c gtk default variant')
-option('dark', type: 'boolean', value: true, description:'build Yaru-c gtk dark variant')
-option('light', type: 'boolean', value: true, description:'build Yaru-c gtk light variant')
+option('default', type: 'boolean', value: true, description:'build Yaru-Fedora gtk default variant')
+option('dark', type: 'boolean', value: true, description:'build Yaru-Fedora gtk dark variant')
+option('light', type: 'boolean', value: true, description:'build Yaru-Fedora gtk light variant')
